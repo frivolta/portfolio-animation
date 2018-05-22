@@ -1,0 +1,1429 @@
+/* USEFUL COLORS
+#F22613 - RED
+#F22613; - RED TRY 2
+#c41b00 - RED DARK
+#2B2827 -BLACK
+
+*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ===============
+      GLOBAL SETTINGS 
+      =============== */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-rendering: optimizeLegibility;
+    color: #2B2827;
+}
+
+a:link,
+a:visited {
+    color: #2B2827;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #2B2827;
+    text-decoration: none;
+}
+
+a.link-inverted:link,
+a.link-inverted:visited {
+    color: #FF3A1A;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+a.link-inverted:hover,
+a.link-inverted:active {
+    color: #2B2827;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+ul {
+    list-style: circle;
+}
+
+h1 {}
+h1.intro{
+    font-family: 'Poppins',sans-serif;
+    font-size: 300%;
+    font-weight: 300;
+    line-height: 100%;
+    color:#fff; 
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 380%;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    
+}
+.chisonoWrapper h2{
+    font-size: 380%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h4 a {
+    margin-top: 15px;
+}
+h4 a.alt{
+    color: #fff;
+}
+.intro{
+    background-color: #FF3A1A;
+    background-image: url(../img/pattern/pattern-bg.png);
+}
+.introWrapper{
+    transform: translate(-50%,-50%);
+    min-width: 263px;
+    min-height: 263px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+}
+.introLogo{
+    display: block;
+    position: relative;
+    background-image: url('../img/intro/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 263px;
+    width: 263px;
+    margin: 0 auto;
+}
+ a.introButton:link, a.introButton:visited{
+    position: relative;
+    display: inline-block;
+    left:50%;
+    transform: translate(-50%,0);
+    padding: 13px 40px;
+    background-color: #fff;
+    font-family: 'Lato',sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 116%;
+    color: #FF3A1A;
+    transition: 1s;
+     box-shadow: 0 0 20px #c41b00;
+}
+
+a.introButton:hover, a.introButton:active{
+    background-color:#ffbdb3;
+    color:#fff;
+    transition: 1s;
+}
+.call-to-action{
+    position: relative;
+    margin-top: 20px;
+    
+}
+.introButton img{
+    display: inline-block;
+    margin-right: 7px;
+    margin-top:-3px;
+}
+.menuWrap,
+.menuWrapBg{
+    position: absolute;
+    
+    width: 3px;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color:#FF3A1A;
+}
+.menuWrapBg{
+    opacity: .3;
+    height: 100%;
+    background-color: #2B2827;
+}
+
+.logoWrap {
+    position: fixed;
+    display: block;
+    max-width: 50%;
+    overflow: hidden;
+    top: 60px;
+    left: 90px;
+    z-index: 100;
+}
+.scrollDown{
+    position: absolute;
+    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 15%;
+    left:50%;
+    transform: translate(-50%,0);
+    color: :#fff;
+}
+.scrollDownText{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color:#fff;
+    font-size:230%;
+    line-height: 150%;
+}
+.scrollText{
+    position: absolute;
+    font-size: 133%;
+    bottom: 11%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.scroll{
+     position: absolute;
+    width: 4px;
+    height: 10%;
+    bottom: 0;
+    left: 50%;
+      overflow: hidden;
+    transform: translate(-50%,0);
+}
+
+.scrollHint{
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    background-color: #F22613;
+    opacity: .4;
+}
+.scrollHintOver{
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    bottom: 100%;
+    left: 50%;
+    background-color: #F22613;
+    opacity: 1;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 150%;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.logo span:first-child {
+    color: #FF3A1A;
+}
+
+nav {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: .3em;
+    padding: 0;
+}
+
+ul.navigation {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+ul.navigation li {
+    display: inline-block;
+    float: left;
+}
+
+ul.navigation li:before {
+    content: "-";
+    margin: 3px;
+}
+
+ul.navigation li:first-child:before {
+    content: "";
+    margin: 0;
+}
+
+ul.navigation li.isActive {
+    font-weight: 700;
+}
+
+.infoWrap {
+    position: fixed;
+    display: block;
+    right: 50%;
+    bottom: 60px;
+    left: 0;
+    z-index: 100;
+}
+
+.aboutme {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.contactmeWrapper {
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-right: 90px;
+}
+.contactmeWrapperLastSection{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.contactme {
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+.contactmeLastSection {
+    text-align: center;
+    margin:0 auto;
+    display: inline-block;
+    position: relative:
+}
+
+.contactme:first-child {
+    margin-right: 0;
+}
+
+.contactmeWrapper h4 {
+    display: inline-block;
+}
+.chisono{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#2B2827;
+    z-index: 100;
+    left:-50%;
+    color: #fff;
+
+}
+.chisonoWrapper{
+    position: absolute;
+    display: block;
+    margin: 0;
+    left: 90px;
+    text-align: right;
+    right: 90px;
+    top: 60px;
+    bottom: 60px;
+    overflow: auto;
+}
+.chisonoEmail{
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.chisonoWrapper h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    clear: both;
+    line-height: 140%;
+
+}
+.chisonoWrapper p{
+    font-size: 110%;
+    font-weight: 100;
+    line-height: 200%;
+    margin-top: 25px;
+}
+
+.jsCloseChiSono{
+    left:0%;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.jsCloseChiSono:hover{
+    left:0%;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+.portfolioSlide {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolioTitle {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    left: 0;
+}
+
+.titleWrap {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+
+/*.titleWrap h2:before{
+   
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 3px;
+    width: 10px;
+    border-top: 3px solid red;
+
+}*/
+
+.borderTop,
+.borderTopAltBorder{
+    position: absolute;
+    height: 3px;
+    width: 10px;
+    background-color: #F22613;
+}
+.borderTopAltBorder{
+    right:0;
+    margin-top:-15px;
+}
+.borderTopRight{
+    right:3px;
+    position: relative;
+    height: 3px;
+    width: 10px;
+    background-color: #F22613;
+    right: 0;
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+    /* clear: both; */
+
+}
+
+
+h4 .borderTop,
+.descriptionTag .borderTop,
+.descriptionLongText .borderTop {
+    margin-top: -15px;
+}
+
+.titleContainer {
+    position: absolute;
+    right: 90px;
+    left: 90px;
+    top: 60px;
+    bottom: 60px;
+}
+
+.portfolioImage {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+   
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.portfolioImageShowMore {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    z-index: 200;
+
+}
+.portfolioDescription {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 100%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    display: none;
+}
+
+.descriptionWrap {
+    position: relative;
+    display: block;
+    margin: 60px 90px;
+    padding-left: 16%;
+}
+
+.descriptionTag,
+.descriptionLongText {
+    margin-top: 30px;
+
+}
+
+.titleWrap .descriptionTag {
+    margin-top: 20px;
+}
+.descriptionImages{
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.descriptionImages img{
+    margin-top:30px;
+    width: 100%;
+}
+.descriptionImages img:first-child{
+    margin-top:0;
+}
+.afterSlide{
+    display: none;
+    opacity: 0;
+    transition:1s;
+}
+.afterSlideFinished{
+    display: block;
+    opacity: 0;
+    transition:1s;
+}
+
+.showMore{
+    display: block;
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 50%;
+    
+    z-index: 200;
+    margin-left: 90px;
+    cursor: pointer;
+    transform: translate(0,-50%);
+    background-color: #FF3A1A;
+    border-radius: 100%;
+
+}
+.showMore_ChiSono{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 50%;
+
+    z-index: 200;
+    margin-left: 90px;
+    cursor: pointer;
+    transform: translate(0,-50%);
+    background-color: #FF3A1A;
+    border-radius: 100%;
+
+}
+
+.showMore img,
+.showMore_ChiSono img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    text-align: center;
+}
+.jsMoreIcon{
+    opacity: 1;
+    padding-left:2px;
+}
+.jsCloseIcon{
+    opacity: 0;
+}
+
+/* JS Normalize */
+.js--slideFade{
+    opacity: 0;
+}
+.aboutmeMobile{
+    display: block;
+    width: 50%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+.aboutmeMobile ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0!important;
+}
+
+.aboutmeMobile ul li{
+    list-style-type: none;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+.aboutmeMobile ul li span{
+    list-style-type: none;
+    margin-bottom:10px;
+    margin-left: 10px;
+}
+.aboutmeMobile ul li img{
+    width: 30px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+
+
+
+.row {
+  margin: -20px 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.row .col.x-50 {
+  width: 50%;
+}
+.row .col.x-100 {
+  width: 100%;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.get-in-touch .title {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  font-size: 300%;
+  line-height: 100%;
+  padding-bottom: 42px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 25px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+    background-color: transparent;
+    font-family: 'Lato',sans-serif;
+    color: #fff;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: 'Lato',sans-serif;
+  font-size: 116%;
+  line-height: 120%;
+  font-weight: 400;
+  color: #fff;
+  cursor: text;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+  position: relative;
+    display: inline-block;
+  
+    padding: 13px 40px;
+    background-color: #fff;
+    font-family: 'Lato',sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 116%;
+    color: #FF3A1A;
+    transition: 1s;
+     box-shadow: 0 0 20px #c41b00;
+}
+.contact-form .submit-btn img{
+    display: inline-block;
+    margin-right: 7px;
+    margin-top: -3px;
+}
+
+
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Lusitana, serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+.note .link:hover {
+  text-decoration: underline;
+}
+
+.contactMeLast {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.contactMeLastEmail,
+.contactMeLastPhone{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+.contactMeLastEmail span,
+.contactMeLastPhone span{
+    margin-left:3px;
+    margin-right: 3px;
+}
+
+.contactMeLastPhone:after,
+.contactMeLastEmail:after{
+    height: 1px;
+    margin-top:2px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-right: 1px white;
+    content: '';
+}
+.contactMeLastEmail a,
+.contactMeLastPhone a{
+color: #fff;
+    font-weight: 300;
+}
+.contactMeLastEmail{
+    margin-left: 20px;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+/* ===== == = === 320 === = == ===== */
+
+@media (min-width : 320px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        text-rendering: optimizeLegibility;
+        color: #2B2827;
+    }
+    h2 {
+        font-size: 175%;
+        margin-left: 0;
+        letter-spacing: 0px;
+    }
+    .chisonoWrapper h2{
+        font-size: 250%;
+        margin-left: 0;
+        letter-spacing: 0px;
+        font-weight: 100;
+    }
+    .descriptionTitle h2{
+        padding-top:5px;
+    }
+    .introContainer {
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(../img/intro/509867718.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1.introHeadlineText {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 58px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+}
+
+h1.introHeadlineText span {
+    color: #FF3A1A;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+    .introLogo {
+        height: 180px;
+        width: 180px;
+        background-size: cover;
+    }
+    h1.intro {
+        font-size: 220%;
+        line-height:120%;
+    }
+    .titleContainer {
+        right: 20px;
+        left: 20px;
+        top: 12px;
+        bottom: 12px;
+    }
+    .logoWrap {
+        top: 12px;
+        left: 20px;
+    }
+    a.introButton:link, a.introButton:visited {
+        padding: 13px 34px;
+        font-size: 100%;
+    }
+    .introButton img {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: -3px;
+        width: 18px;
+    }
+    .aboutme {
+        margin-left: 20px;
+        padding-left:2px;
+    }
+    .contactmeWrapper {
+        margin-right: 20px;
+    }
+    .contactme {
+        margin-right: 10px;
+    }
+    .infoWrap {
+        bottom: 12px;
+    }
+    .descriptionWrap {
+        margin: 12px 20px;
+    }
+    .titleWrap .descriptionTag {
+        display: none;
+    }
+    .showMore {
+        display: block;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 20px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    .showMore_ChiSono {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 60px;
+        z-index: 200;
+        margin-left: -20px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    nav{
+        display:none;
+    }
+    .hiddenDesktop{
+        display: inherit;
+    }
+    .hiddenMobile{
+        display: none;
+    }
+    .logo {
+        font-size: 130%;
+        letter-spacing: 1px;
+    }
+    .descriptionLongText ul{
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        -webkit-padding-start: 0;
+        margin-left:14px;
+    }
+    .get-in-touch.hiddenDesktop .contactMeLastPhone a{
+        font-size:160%;
+    }
+    .get-in-touch.hiddenDesktop .contactMeLastEmail a{
+        font-size:160%;
+    }
+    .contactMeLastEmail {
+        margin-left: 0;
+    }
+    .chisono{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#2B2827;
+    z-index: 100;
+    left:-100%;
+    color: #fff;
+
+}
+    .chisonoWrapper {
+        left: 20px;
+        right: 20px;
+        top: 100px;
+        bottom: 12px;
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+/* ===== == = === 480 === = == ===== */
+
+@media (min-width : 480px) {
+     .chisono{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#2B2827;
+    z-index: 100;
+    left:-50%;
+    color: #fff;
+
+}
+    .chisonoWrapper {
+    left: 20px;
+    right: 20px;
+    top: 12px;
+    bottom: 12px;
+}  .showMore_ChiSono {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 20px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+}
+
+/* ===== == = === 768 === = == ===== */
+
+@media (min-width : 768px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        text-rendering: optimizeLegibility;
+        color: #2B2827;
+    }
+    h2,
+    .chisonoWrapper h2{
+        font-size: 300%;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0px;
+        letter-spacing: 1px;
+    }
+    .chisonoWrapper h2{
+        font-weight: 100;
+    }
+    .descriptionTitle h2{
+        padding-top:0;
+    }
+
+    .introLogo {
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+    }
+    h1.intro {
+        font-size: 240%;
+        line-height:100%;
+    }
+    .titleContainer {
+        right: 30px;
+        left: 30px;
+        top: 20px;
+        bottom: 20px;
+    }
+    .logoWrap {
+        top: 20px;
+        left: 30px;
+    }
+    a.introButton:link, a.introButton:visited {
+        padding: 13px 34px;
+        font-size: 100%;
+    }
+    .introButton img {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: -4px;
+        width: 18px;
+    }
+    .aboutme {
+        margin-left: 30px;
+    }
+    .contactmeWrapper {
+        margin-right: 30px;
+    }
+    .contactme {
+        margin-right: 10px;
+    }
+    .infoWrap {
+        bottom: 20px;
+    }
+    .descriptionWrap {
+        margin: 20px 30px;
+    }
+    .titleWrap .descriptionTag {
+        display: inherit;
+        overflow: visible;
+    }
+    .showMore {
+        display: block;
+        position: absolute;
+        height: 64px;
+        width: 64px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 30px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    .showMore_ChiSono {
+        position: absolute;
+        height: 64px;
+        width: 64px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 30px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    nav{
+        display:inherit;
+    }
+    .hiddenDesktop{
+        display: none;
+    }
+    .hiddenMobile{
+        display: inherit;
+    }
+    .logo {
+        font-size: 150%;
+        letter-spacing: 1.5px;
+    }
+    .descriptionLongText ul{
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 40px;
+    }
+    .contactMeLastEmail {
+        margin-left: 20px;
+    }
+   .chisonoWrapper {
+    left: 30px;
+    right: 30px;
+    top: 20px;
+    bottom: 20px;
+}
+}
+
+/* ===== == = === 1024 === = == ===== */
+
+@media (min-width : 1024px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        text-rendering: optimizeLegibility;
+        color: #2B2827;
+    }
+    h2,
+    .chisonoWrapper h2{
+        font-size: 280%;
+    }
+
+    .introLogo {
+        height: 210px;
+        width: 210px;
+        background-size: cover;
+    }
+    h1.intro {
+        font-size: 240%;
+    }
+    .titleContainer {
+        right: 90px;
+        left: 90px;
+        top: 60px;
+        bottom: 60px;
+    }
+    .logoWrap {
+        top: 60px;
+        left: 90px;
+    }
+    a.introButton:link, a.introButton:visited {
+        padding: 13px 40px;
+        font-size: 116%;
+    }
+    .introButton img {
+        display: inline-block;
+        margin-right: 7px;
+        margin-top: -3px;
+    }
+    .aboutme {
+        margin-left: 90px;
+    }
+    .contactmeWrapper {
+        margin-right: 90px;
+    }
+    .contactme {
+        margin-right: 20px;
+    }
+    .infoWrap {
+        bottom: 60px;
+    }
+    .descriptionWrap {
+        margin: 60px 90px;
+    }
+    .showMore {
+        display: block;
+        position: absolute;
+        height: 64px;
+        width: 64px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 90px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    .showMore_ChiSono {
+        position: absolute;
+        height: 64px;
+        width: 64px;
+        top: 50%;
+        z-index: 200;
+        margin-left: 90px;
+        cursor: pointer;
+        transform: translate(0,-50%);
+        background-color: #FF3A1A;
+        border-radius: 100%;
+    }
+    .chisonoWrapper {
+    left: 90px;
+    right: 90px;
+    top: 60px;
+    bottom: 60px;
+}
+
+}
+
+/* ===== == = === 1220px === = == ===== */
+
+@media  (min-width : 1220px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        text-rendering: optimizeLegibility;
+        color: #2B2827;
+    }
+    h2,
+    .chisonoWrapper h2{
+        font-size: 380%;
+
+    }
+    .introLogo {
+        height: 263px;
+        width: 263px;
+        background-size: cover;
+    }
+
+    h1.intro {
+        font-size: 300%;
+    }
+
+}
+
+
